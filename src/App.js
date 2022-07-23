@@ -1,25 +1,25 @@
 import './App.css';
-import NavBar from './components/navbar/NavBar'
-import Welcome from './components/landing/Welcome';
-import About from './components/about/About'
-import Portfolio from './components/portfolio/Portfolio'
-import Footer from './components/footer/Footer';
-import Contact from './components/contact/Contact';
-import Fixedbtn from './components/fixedbtn/Fixedbtn';
+import PortfolioPage from './pages/portfolio/PortfolioPage';
+import HomePage from './pages/home/HomePage';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <Welcome/>
-      <About/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
-      <Fixedbtn/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<HomePage />}>
+      </Route>
+      <Route path="/portfolio" element={<PortfolioPage />}/>
+
+    </Routes>
+  </BrowserRouter>
   );
 }
 

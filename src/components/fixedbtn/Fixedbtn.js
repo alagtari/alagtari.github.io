@@ -54,7 +54,7 @@ const goToTop = () => {
     <Offcanvas  show={show} onHide={handleClose} placement='bottom' scroll={true} style={{borderTopLeftRadius:'20px',borderTopRightRadius:'20px',height: '50%',paddingLeft:'10vw'}} >
        
         
-        <Link className='navs navitem' to="/home"><div>HOME</div></Link>
+        <Link className='navs navitem' to="/"><div>HOME</div></Link>
         <Link className='navs navitem' to=""><div>ABOUT</div></Link>
         <Link className='navs navitem' to="/portfolio"><div>PORTFOLIO</div></Link>      
         <Link className='navs navitem' to=""><div>CONTACT</div></Link>
