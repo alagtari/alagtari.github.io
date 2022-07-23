@@ -17,7 +17,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/home" element={<HomePage />}>
+      <Route path="/" element={<HomePage />}>
       </Route>
       <Route path="/portfolio" element={<PortfolioPage />}/>
 
