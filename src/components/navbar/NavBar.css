@@ -1,0 +1,33 @@
+span{
+    margin-left: 60px;
+    font-size: 11pt;
+    font-weight: 600;
+}
+div{
+    margin-top: 5vh;
+    
+}
+#princpale{
+    margin-left: 10vw;
+    margin-right: 45vw;
+    font-size: 20pt;
+    font-weight: 900;
+    letter-spacing: 5px;
+
+}
+
+@media only screen and (max-width: 576px) {
+    span{
+        display: none;
+        
+    }
+    #princpale{
+        display: contents;
+        margin-left: 5px;
+        margin-right: 45vw;
+        font-size: 20pt;
+        font-weight: 900;
+    
+    }
+    
+    }

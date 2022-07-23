@@ -1,0 +1,25 @@
+#fixedbtn{
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    background: rgb(46, 157, 255);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    padding: 5px;
+}
+.navitem{
+    font-size: 11pt;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+
+    #fixedbtn{
+        right: 6%;
+        padding: 10px;
+    
+    }
+    
+    }

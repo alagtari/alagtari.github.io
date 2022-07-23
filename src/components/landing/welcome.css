@@ -1,0 +1,32 @@
+h6,h1{
+    font-weight: 600;
+}
+h1{
+    font-size: 50px;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.rowclass{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.colclass{
+    width: 30vw;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .profile_pic{
+     display: none;
+    }
+    .colclass{
+        align-items: center;
+        width: 80vw;
+        margin-left: 4vw;
+    }
+    
+    }
