@@ -7,7 +7,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-
+import Test from './pages/Test';
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
       <Route path="/" element={<HomePage />}>
       </Route>
       <Route path="/portfolio" element={<PortfolioPage />}/>
+      <Route path="/test" element={<Test />}/>
 
     </Routes>
   </BrowserRouter>
