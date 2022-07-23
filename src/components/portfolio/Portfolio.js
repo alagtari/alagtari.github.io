@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './portfolio.css'
+import { Link } from "react-router-dom";
+
 function Portfolio() {
   return (
     <Container  align='center'>
@@ -28,7 +30,7 @@ function Portfolio() {
       </Col>
       </Row>
       <br/>
-            <div align="center" className='morebtn'>More ...</div>
+        <Link style={{textDecoration:'none'}} to='/portfolio'>    <div align="center" className='morebtn'>More ...</div></Link>
 
       <br/><br/>
 

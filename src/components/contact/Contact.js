@@ -3,7 +3,7 @@ import './contact.css'
 export  default function Contact () {
  
   return (
-    <div className='about' align="center">
+    <div id='contact' className='about' align="center">
       <br/>
       <div align="center" >
          <h1 >CANTACT</h1>

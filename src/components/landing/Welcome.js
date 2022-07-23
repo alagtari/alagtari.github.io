@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import profile from '../../assets/profile.png'
 import './welcome.css'
+import { FaCode } from 'react-icons/fa';
 function Welcome() {
   return (
     <Container >
