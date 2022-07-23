@@ -39,12 +39,14 @@ function About() {
         <div className='skill'>Programming C</div>
         <div className='skill'>HTML</div>
         <div className='skill'>CSS</div>
-        <div className='skill'>JavaScript</div>
+
         <div className='skill'>React</div>
         <div className='skill'>Flutter</div>
+        <div className='skill'>JavaScript</div>
+        <div className='skill'>JAVA</div>        
         <div className='skill'>VueJS</div>
         <div className='skill'>Python</div>
-        <div className='skill'>JAVA</div>
+        
         <div className='skill'>NoSQL</div>
         <div className='skill'>PLSQL</div>
         </div>
