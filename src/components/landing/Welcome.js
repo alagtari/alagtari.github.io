@@ -13,7 +13,6 @@ function Welcome() {
         <div className='colclass profile_pic'>
           <motion.img
           animate={{
-            opacity:[0,1],
             x:[-150,0],
             transition:{duration:1}
           }}
@@ -22,7 +21,6 @@ function Welcome() {
         <div className='colclass'>
           <motion.h6
           animate={{
-            opacity:[0,1],
             x:[150,0],
             transition:{duration:0.7}
           }}
@@ -31,7 +29,6 @@ function Welcome() {
             </motion.h6>
           <motion.h1
           animate={{
-            opacity:[0,1],
             x:[150,0],
             transition:{duration:0.7}
           }}
@@ -41,7 +38,6 @@ function Welcome() {
           <br/><br/>
           <motion.p
           animate={{
-            opacity:[0,1],
             x:[150,0],
             transition:{duration:0.9}
           }}
@@ -53,7 +49,6 @@ function Welcome() {
           className='morebtn'
           animate={{
             scale:scale?1.05:1,
-            opacity:[0,1],
             x:[150,0],
             transition:{duration:scale?0.5:1}
           }}

@@ -1,20 +1,43 @@
 import './contact.css'
+import { motion } from "framer-motion";
+import { useState } from 'react';
 
 export  default function Contact () {
- 
+  const [scale,setScale] =useState(false)
+
   return (
     <div id='contact' className='about' align="center">
       <br/>
-      <div align="center" >
+      <motion.div
+       initial="hidden" viewport={{once:true}}
+       whileInView={{
+         opacity:[0,1],
+         y:[50,0],
+         transition:{duration:0.5}
+       }}
+      align="center" >
          <h1 >CANTACT</h1>
          <hr className='titleDecoration'/>
-        </div>
+        </motion.div>
     
     <div align="center" className="contact__form-container">
           <form action="#" className="contact__form">
             <div className="contact__form-field">
-              <label className="contact__form-label" for="name">Name</label>
-              <input
+              <motion.label
+               initial="hidden" viewport={{once:true}}
+               whileInView={{
+                 opacity:[0,1],
+                 y:[50,0],
+                 transition:{duration:0.6}
+               }}
+              className="contact__form-label" for="name">Name</motion.label>
+              <motion.input
+               initial="hidden" viewport={{once:true}}
+               whileInView={{
+                 opacity:[0,1],
+                 y:[50,0],
+                 transition:{duration:0.7}
+               }}
                 required
                 placeholder="Enter Your Name"
                 type="text"
@@ -24,8 +47,21 @@ export  default function Contact () {
               />
             </div>
             <div className="contact__form-field">
-              <label className="contact__form-label" for="email">Email</label>
-              <input
+              <motion.label
+               initial="hidden" viewport={{once:true}}
+               whileInView={{
+                 opacity:[0,1],
+                 y:[50,0],
+                 transition:{duration:0.8}
+               }}
+              className="contact__form-label" for="email">Email</motion.label>
+              <motion.input
+                 initial="hidden" viewport={{once:true}}
+                 whileInView={{
+                   opacity:[0,1],
+                   y:[50,0],
+                   transition:{duration:0.9}
+                 }}
                 required
                 placeholder="Enter Your Email"
                 type="text"
@@ -35,8 +71,21 @@ export  default function Contact () {
               />
             </div>
             <div className="contact__form-field">
-              <label className="contact__form-label" for="message">Message</label>
-              <textarea
+              <motion.label
+               initial="hidden" viewport={{once:true}}
+               whileInView={{
+                 opacity:[0,1],
+                 y:[50,0],
+                 transition:{duration:1}
+               }}
+              className="contact__form-label" for="message">Message</motion.label>
+              <motion.textarea
+                 initial="hidden" viewport={{once:true}}
+                 whileInView={{
+                   opacity:[0,1],
+                   y:[50,0],
+                   transition:{duration:1.1}
+                 }}
                 required
                 cols="30"
                 rows="10"
@@ -44,12 +93,27 @@ export  default function Contact () {
                 placeholder="Enter Your Message"
                 name="message"
                 id="message"
-              ></textarea>
+              ></motion.textarea>
             </div>
 
-            <button id='submitbtn' className='morebtn' align="center">
+            <motion.button
+            initial="hidden" viewport={{once:true}}
+            whileInView={{
+              scale:scale?1.05:1,
+              opacity:[0,1],
+              y:[50,0],
+              transition:{duration:scale?0.4:1.2}
+            }}
+    
+            onMouseEnter={()=>{
+                setScale(!scale)
+            }}
+            onMouseLeave={()=>{
+                setScale(!scale)
+          }}
+            id='submitbtn' className='morebtn' align="center">
               Submit
-            </button>
+            </motion.button>
        
           </form>
         </div>

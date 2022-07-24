@@ -4,6 +4,7 @@ import { RiMenuFill, RiArrowUpSLine } from "react-icons/ri";
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaGithub ,FaLinkedin,FaFacebook,FaTwitter,FaInstagram} from 'react-icons/fa';
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function Fixedbtn() {
     function getWindowSize() {
@@ -54,22 +55,73 @@ const goToTop = () => {
     <Offcanvas  show={show} onHide={handleClose} placement='bottom' scroll={true} style={{borderTopLeftRadius:'20px',borderTopRightRadius:'20px',height: '50%',paddingLeft:'10vw'}} >
        
         
-        <Link className='navs navitem' to="/"><div>HOME</div></Link>
-        <Link className='navs navitem' to=""><div>ABOUT</div></Link>
-        <Link className='navs navitem' to="/portfolio"><div>PORTFOLIO</div></Link>      
-        <Link className='navs navitem' to=""><div>CONTACT</div></Link>
-        <div >
+        <Link className='navs navitem' to="/">
+        <motion.div
+        initial="hidden" viewport={{once:true}}
+        whileInView={{
+          opacity:[0,1],
+          y:[50,0],
+          transition:{duration:0.5}
+        }}
+        >  
+          HOME</motion.div></Link>
+
+        <Link className='navs navitem' to="">
+        <motion.div
+        initial="hidden" viewport={{once:true}}
+        whileInView={{
+          opacity:[0,1],
+          y:[50,0],
+          transition:{duration:0.55}
+        }}
+        >  
+          ABOUT</motion.div></Link>
+        <Link className='navs navitem' to="/portfolio">
+        <motion.div
+        initial="hidden" viewport={{once:true}}
+        whileInView={{
+          opacity:[0,1],
+          y:[50,0],
+          transition:{duration:0.6}
+        }}
+        >  
+          PORTFOLIO</motion.div></Link>      
+        <Link className='navs navitem' to="">
+        <motion.div
+        initial="hidden" viewport={{once:true}}
+        whileInView={{
+          opacity:[0,1],
+          y:[50,0],
+          transition:{duration:0.65}
+        }}
+        >  
+          CONTACT</motion.div></Link>
+        <motion.div 
+        initial="hidden" viewport={{once:true}}
+        whileInView={{
+          opacity:[0,1],
+          transition:{duration:1}
+        }}
+        >
         <FaGithub style={{paddingRight:'10px'}} size={50}/>
         <FaFacebook style={{paddingRight:'10px'}} size={50}/>
         <FaInstagram style={{paddingRight:'10px'}} size={50}/>
         <FaLinkedin style={{paddingRight:'10px'}} size={50}/>
         <FaTwitter style={{paddingRight:'10px'}} size={50}/>
-        </div>
+        </motion.div>
         
       </Offcanvas>
-    <div id='fixedbtn' align='center' className={`${showTopBtn ? "" : "hideupbtn"}`}  >
+    <motion.div
+    
+    whileInView={{
+      opacity:[0,1],
+      x:[20,0],
+      transition:{duration:1}
+    }}
+
+    id='fixedbtn' align='center' className={`${showTopBtn ? "" : "hideupbtn"}`}  >
      {windowSize.innerWidth <576 ? <RiMenuFill size={25} onClick={handleShow}/>:<RiArrowUpSLine size={35} onClick={goToTop}  /> }
-    </div>
+    </motion.div>
     </>
   );
 }

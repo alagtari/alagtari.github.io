@@ -12,6 +12,7 @@ function Portfolio() {
     <Container  align='center'>
       
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -27,6 +28,7 @@ function Portfolio() {
       
       <Col md={4} xs={10}>
           <motion.div
+          initial="hidden" viewport={{once:true}}
           whileInView={{
             opacity:[0,1],
             y:[50,0],
@@ -37,6 +39,7 @@ function Portfolio() {
       
       <Col md={4} xs={10}>
           <motion.div
+          initial="hidden" viewport={{once:true}}
           whileInView={{
             opacity:[0,1],
             y:[50,0],
@@ -47,6 +50,7 @@ function Portfolio() {
       
       <Col md={4} xs={10}>
           <motion.div
+          initial="hidden" viewport={{once:true}}
           whileInView={{
             opacity:[0,1],
             y:[50,0],
@@ -58,11 +62,12 @@ function Portfolio() {
       <br/>
         <Link style={{textDecoration:'none'}} to='/portfolio'>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           scale:scale?1.05:1,
           opacity:[0,1],
           y:[50,0],
-          transition:{duration:scale?0.9:1}
+          transition:{duration:scale?0.4:1}
         }}
 
         onMouseEnter={()=>{

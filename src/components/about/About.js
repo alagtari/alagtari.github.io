@@ -10,11 +10,13 @@ function About() {
       <Container  >
 <br/>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
           transition:{duration:0.5}
         }}
+        
         align="center" >
          <h1 >ABOUT ME</h1>
          <hr className='titleDecoration'/>
@@ -25,6 +27,7 @@ function About() {
       <Row className='aboutitems' >
         <Col md={3} xs={12}>
         <motion.h4
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -33,6 +36,7 @@ function About() {
         >EDUCATION</motion.h4>
         <br/>
         <motion.h6
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -40,6 +44,7 @@ function About() {
         }}
         >Degree in Software Engineering</motion.h6>
         <motion.p
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -51,6 +56,7 @@ function About() {
         
         <Col md={5} xs={12}>
         <motion.h4
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -59,6 +65,7 @@ function About() {
         >PROFESSIONAL EXPERIENCE</motion.h4>
         <br/>
         <motion.h6
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -66,6 +73,7 @@ function About() {
         }}
         >Intern at E-Build - End of study internship (2022) </motion.h6>
         <motion.p
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -74,6 +82,7 @@ function About() {
         >creation of a customer relationship management platform (CRM)</motion.p>
         <br/>
         <motion.h6
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -81,6 +90,7 @@ function About() {
         }}
         >Intern at NABDA - End of year internship (2021)</motion.h6>
         <motion.p
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -91,6 +101,7 @@ function About() {
         
         <Col md={4} xs={12}>
         <motion.h4
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -99,6 +110,7 @@ function About() {
         >My SKILLS</motion.h4>
         <motion.div className='skills'>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -106,6 +118,7 @@ function About() {
         }}
         className='skill'>Programming C</motion.div>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -113,6 +126,7 @@ function About() {
         }}
         className='skill'>HTML</motion.div>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -121,6 +135,7 @@ function About() {
         className='skill'>CSS</motion.div>
         
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -128,6 +143,7 @@ function About() {
         }}
         className='skill'>React</motion.div>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -135,6 +151,7 @@ function About() {
         }}
         className='skill'>Flutter</motion.div>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -142,6 +159,7 @@ function About() {
         }}
         className='skill'>JavaScript</motion.div>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -149,6 +167,7 @@ function About() {
         }}
         className='skill'>JAVA</motion.div>        
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -156,6 +175,7 @@ function About() {
         }}
         className='skill'>VueJS</motion.div>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -165,6 +185,7 @@ function About() {
         
         <motion.div
         
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],
@@ -172,6 +193,7 @@ function About() {
         }}
         className='skill'>NoSQL</motion.div>
         <motion.div
+        initial="hidden" viewport={{once:true}}
         whileInView={{
           opacity:[0,1],
           y:[50,0],

@@ -13,7 +13,7 @@ function NavBar() {
         transition:{duration:1}
       }}
     style={{marginLeft: '20px'}} >
-      <span id='princpale'><FaCode style={{color:"rgb(46, 157, 255)"}}/>{" "}ALA GTARI</span>
+    <span id='princpale'><FaCode style={{color:"rgb(46, 157, 255)"}}/>{" "}ALA GTARI</span>
       <Link className='navs' to="/"><span
       
       >HOME</span></Link>
