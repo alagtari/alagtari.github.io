@@ -1,0 +1,59 @@
+.photos{
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:0 ;
+    padding-top: 0;
+}
+.button{
+    width:150px ;
+    height: 40px;
+    border: 2px rgb(46, 157, 255) solid;
+    padding-top: 5px;
+    border-radius: 5px;
+    
+}
+.button>a{
+    text-decoration: none;
+    color: rgb(46, 157, 255);
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+.button:hover{
+    background-color: rgb(46, 157, 255);
+}
+.button>a:hover{
+    color: rgb(255, 255, 255);
+    
+}
+
+.photo{
+    width: 33%;  
+}
+.uncentred{
+    padding-top: 10vh;
+}
+.photo>img{
+    border-radius: 20px;
+    margin-bottom: 5vh;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .photos{
+        width: 70vw;
+    }
+    
+    .photo{
+        width: 100%;  
+    }
+    .uncentred{
+        
+    }
+    .photo>img{
+        width: 70vw;
+        border-radius: 20px;
+        margin-bottom: 5vh;
+    }
+}

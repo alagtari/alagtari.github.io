@@ -7,12 +7,16 @@ function NavBar() {
 
   return (
     <motion.div
+    initial={{
+      opacity:0,
+      y:-50
+    }}
       animate={{
-        opacity:[0,1],
-        y:[-150,0],
-        transition:{duration:1}
+        opacity:1,
+        y:0,
+        transition:{duration:0.6  }
       }}
-    style={{marginLeft: '20px'}} >
+    style={{marginLeft: '20px',backgroundColor:'rgba(0,0,0,0)'}} >
     <span id='princpale'><FaCode style={{color:"rgb(46, 157, 255)"}}/>{" "}ALA GTARI</span>
       <Link className='navs' to="/"><span
       

@@ -1,9 +1,10 @@
 .project{
     width: 100%;
-    height: 40vh;
+    height: 25vh;
     /*box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.052);*/
     border-radius: 15px;
     background-color: rgba(0, 0, 0, 0.052);
+    padding: 30px;
     
 }
 .morebtn {
@@ -25,5 +26,11 @@
           
 .items{
     margin-left: 10vw;
+}
+.project{
+    
+    height: 40vh;
+   
+    
 }
 }

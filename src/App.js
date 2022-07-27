@@ -1,6 +1,7 @@
 import './App.css';
 import PortfolioPage from './pages/portfolio/PortfolioPage';
 import HomePage from './pages/home/HomePage';
+import GalleryPage from './pages/gallery/Gallery';
 
 import {
   BrowserRouter,
@@ -18,6 +19,7 @@ function App() {
       </Route>
       <Route path="/portfolio" element={<PortfolioPage />}/>
       <Route path="/test" element={<Test />}/>
+      <Route path="/gallery" element={<GalleryPage />}/>
 
     </Routes>
   </BrowserRouter>

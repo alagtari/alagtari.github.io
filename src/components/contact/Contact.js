@@ -9,12 +9,15 @@ export  default function Contact () {
     <div id='contact' className='about' align="center">
       <br/>
       <motion.div
-       initial="hidden" viewport={{once:true}}
-       whileInView={{
-         opacity:[0,1],
-         y:[50,0],
-         transition:{duration:0.5}
-       }}
+       initial={{
+        opacity:0.5,
+        y:50
+      }} viewport={{once:true}}
+      whileInView={{
+        opacity:1,
+        y:0,
+        transition:{duration:0.5}
+      }}
       align="center" >
          <h1 >CANTACT</h1>
          <hr className='titleDecoration'/>
@@ -24,18 +27,24 @@ export  default function Contact () {
           <form action="#" className="contact__form">
             <div className="contact__form-field">
               <motion.label
-               initial="hidden" viewport={{once:true}}
-               whileInView={{
-                 opacity:[0,1],
-                 y:[50,0],
+               initial={{
+                opacity:0.5,
+                y:50
+              }} viewport={{once:true}}
+              whileInView={{
+                opacity:1,
+                y:0,
                  transition:{duration:0.6}
                }}
               className="contact__form-label" for="name">Name</motion.label>
               <motion.input
-               initial="hidden" viewport={{once:true}}
-               whileInView={{
-                 opacity:[0,1],
-                 y:[50,0],
+               initial={{
+                opacity:0.5,
+                y:50
+              }} viewport={{once:true}}
+              whileInView={{
+                opacity:1,
+                y:0,
                  transition:{duration:0.7}
                }}
                 required
@@ -48,18 +57,24 @@ export  default function Contact () {
             </div>
             <div className="contact__form-field">
               <motion.label
-               initial="hidden" viewport={{once:true}}
-               whileInView={{
-                 opacity:[0,1],
-                 y:[50,0],
+               initial={{
+                opacity:0.5,
+                y:50
+              }} viewport={{once:true}}
+              whileInView={{
+                opacity:1,
+                y:0,
                  transition:{duration:0.8}
                }}
               className="contact__form-label" for="email">Email</motion.label>
               <motion.input
-                 initial="hidden" viewport={{once:true}}
-                 whileInView={{
-                   opacity:[0,1],
-                   y:[50,0],
+                 initial={{
+                  opacity:0.5,
+                  y:50
+                }} viewport={{once:true}}
+                whileInView={{
+                  opacity:1,
+                  y:0,
                    transition:{duration:0.9}
                  }}
                 required
@@ -72,18 +87,24 @@ export  default function Contact () {
             </div>
             <div className="contact__form-field">
               <motion.label
-               initial="hidden" viewport={{once:true}}
-               whileInView={{
-                 opacity:[0,1],
-                 y:[50,0],
+               initial={{
+                opacity:0.5,
+                y:50
+              }} viewport={{once:true}}
+              whileInView={{
+                opacity:1,
+                y:0,
                  transition:{duration:1}
                }}
               className="contact__form-label" for="message">Message</motion.label>
               <motion.textarea
-                 initial="hidden" viewport={{once:true}}
-                 whileInView={{
-                   opacity:[0,1],
-                   y:[50,0],
+                 initial={{
+                  opacity:0.5,
+                  y:50
+                }} viewport={{once:true}}
+                whileInView={{
+                  opacity:1,
+                  y:0,
                    transition:{duration:1.1}
                  }}
                 required
@@ -97,11 +118,14 @@ export  default function Contact () {
             </div>
 
             <motion.button
-            initial="hidden" viewport={{once:true}}
+            initial={{
+              opacity:0.5,
+              y:50
+            }} viewport={{once:true}}
             whileInView={{
+              opacity:1,
+              y:0,
               scale:scale?1.05:1,
-              opacity:[0,1],
-              y:[50,0],
               transition:{duration:scale?0.4:1.2}
             }}
     

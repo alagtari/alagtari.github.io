@@ -57,10 +57,12 @@ const goToTop = () => {
         
         <Link className='navs navitem' to="/">
         <motion.div
-        initial="hidden" viewport={{once:true}}
+        initial={{
+          opacity:0.2,
+        }}
+    
         whileInView={{
-          opacity:[0,1],
-          y:[50,0],
+          opacity:1,
           transition:{duration:0.5}
         }}
         >  
@@ -68,38 +70,47 @@ const goToTop = () => {
 
         <Link className='navs navitem' to="">
         <motion.div
-        initial="hidden" viewport={{once:true}}
+        initial={{
+          opacity:0.2,
+        }}
+    
         whileInView={{
-          opacity:[0,1],
-          y:[50,0],
+          opacity:1,
           transition:{duration:0.55}
         }}
         >  
           ABOUT</motion.div></Link>
         <Link className='navs navitem' to="/portfolio">
         <motion.div
-        initial="hidden" viewport={{once:true}}
+        initial={{
+          opacity:0.2,
+        }}
+    
         whileInView={{
-          opacity:[0,1],
-          y:[50,0],
+          opacity:1,
           transition:{duration:0.6}
         }}
         >  
           PORTFOLIO</motion.div></Link>      
         <Link className='navs navitem' to="">
         <motion.div
-        initial="hidden" viewport={{once:true}}
+        initial={{
+          opacity:0.2,
+        }}
+    
         whileInView={{
-          opacity:[0,1],
-          y:[50,0],
+          opacity:1,
           transition:{duration:0.65}
         }}
         >  
           CONTACT</motion.div></Link>
         <motion.div 
-        initial="hidden" viewport={{once:true}}
+        initial={{
+          opacity:0.2,
+        }}
+    
         whileInView={{
-          opacity:[0,1],
+          opacity:1,
           transition:{duration:1}
         }}
         >
@@ -112,11 +123,24 @@ const goToTop = () => {
         
       </Offcanvas>
     <motion.div
-    
+
+    initial={{
+      opacity:0.2,
+      x:20,
+
+    }}
+
     whileInView={{
-      opacity:[0,1],
-      x:[20,0],
+      opacity:1,
+      x:0,
       transition:{duration:1}
+    }}
+
+    exit={{
+      opacity:0,
+      x:20,
+      transition:{duration:1}
+
     }}
 
     id='fixedbtn' align='center' className={`${showTopBtn ? "" : "hideupbtn"}`}  >

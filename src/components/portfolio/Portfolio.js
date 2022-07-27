@@ -12,10 +12,13 @@ function Portfolio() {
     <Container  align='center'>
       
         <motion.div
-        initial="hidden" viewport={{once:true}}
+        initial={{
+          opacity:0.5,
+          y:50
+        }} viewport={{once:true}}
         whileInView={{
-          opacity:[0,1],
-          y:[50,0],
+          opacity:1,
+          y:0,
           transition:{duration:0.5}
         }}
         align="center" >
@@ -26,12 +29,41 @@ function Portfolio() {
       <br/><br/>
       <Row className='items' >
       
+      <Col md={4} xs={10} align='center'>
+      <Link style={{textDecoration:'none'}} to='/gallery'>
+          <motion.div
+          initial={{
+            opacity:0.5,
+            y:50
+          }}
+           viewport={{once:true}}
+          whileInView={{
+            opacity:1,
+            y:0,
+            transition:{duration:0.6}
+          }}
+          className='project'>
+          <h4>Food mobile application</h4>
+          <p>A mobile application for food delivery</p>
+          <div className='skills'>
+        <div className='skill'>Flutter</div>
+        <div className='skill'>UX/UI</div>
+
+        </div>
+        </motion.div>
+</Link>
+      </Col>
+      
       <Col md={4} xs={10}>
           <motion.div
-          initial="hidden" viewport={{once:true}}
+          initial={{
+            opacity:0.5,
+            y:50
+          }}
+           viewport={{once:true}}
           whileInView={{
-            opacity:[0,1],
-            y:[50,0],
+            opacity:1,
+            y:0,
             transition:{duration:0.7}
           }}
           className='project'></motion.div>
@@ -39,22 +71,15 @@ function Portfolio() {
       
       <Col md={4} xs={10}>
           <motion.div
-          initial="hidden" viewport={{once:true}}
-          whileInView={{
-            opacity:[0,1],
-            y:[50,0],
-            transition:{duration:0.8}
+          initial={{
+            opacity:0.5,
+            y:50
           }}
-          className='project'></motion.div>
-      </Col>
-      
-      <Col md={4} xs={10}>
-          <motion.div
-          initial="hidden" viewport={{once:true}}
+           viewport={{once:true}}
           whileInView={{
-            opacity:[0,1],
-            y:[50,0],
-            transition:{duration:0.9}
+            opacity:1,
+            y:0,
+            transition:{duration:0.8}
           }}
           className='project'></motion.div>
       </Col>
@@ -62,11 +87,15 @@ function Portfolio() {
       <br/>
         <Link style={{textDecoration:'none'}} to='/portfolio'>
         <motion.div
-        initial="hidden" viewport={{once:true}}
+        initial={{
+          opacity:0.5,
+          y:50
+        }}
+         viewport={{once:true}}
         whileInView={{
+          opacity:1,
+          y:0,
           scale:scale?1.05:1,
-          opacity:[0,1],
-          y:[50,0],
           transition:{duration:scale?0.4:1}
         }}
 
