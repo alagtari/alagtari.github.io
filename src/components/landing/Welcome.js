@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/Container';
-import profile from '../../assets/profile.png'
+import profile from '../../assets/developer.png'
 import './welcome.css'
 import { motion } from "framer-motion";
 import { useState } from 'react';

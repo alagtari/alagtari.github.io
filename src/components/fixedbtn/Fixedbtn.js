@@ -144,7 +144,7 @@ const goToTop = () => {
     }}
 
     id='fixedbtn' align='center' className={`${showTopBtn ? "" : "hideupbtn"}`}  >
-     {windowSize.innerWidth <576 ? <RiMenuFill size={25} onClick={handleShow}/>:<RiArrowUpSLine size={35} onClick={goToTop}  /> }
+     {windowSize.innerWidth <786 ? <RiMenuFill size={25} onClick={handleShow}/>:<RiArrowUpSLine size={35} onClick={goToTop}  /> }
     </motion.div>
     </>
   );

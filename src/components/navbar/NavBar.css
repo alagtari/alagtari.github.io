@@ -1,5 +1,5 @@
 span{
-    margin-left: 60px;
+    margin-left: 4vw;
     font-size: 11pt;
     font-weight: 600;
 }
@@ -8,15 +8,23 @@ div{
     
 }
 #princpale{
-    margin-left: 10vw;
-    margin-right: 45vw;
+    margin-left: 10px;
+    margin-right: 40vw;
     font-size: 20pt;
     font-weight: 900;
     letter-spacing: 5px;
 
 }
+@media only screen and (max-width: 1160px) {
+    #princpale{
+        
+        margin-right: 18vw;
+        
+    
+    }
+}
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 785px) {
     span{
         display: none;
         

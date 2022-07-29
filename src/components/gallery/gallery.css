@@ -1,5 +1,5 @@
 .photos{
-    width: 80vw;
+    width: 90vw;
     display: flex;
     flex-wrap: wrap;
     margin-top:0 ;
@@ -29,17 +29,17 @@
 }
 
 .photo{
-    width: 33%;  
-}
-.uncentred{
-    padding-top: 10vh;
+    width: 29vw; 
 }
 .photo>img{
     border-radius: 20px;
-    margin-bottom: 5vh;
+    width: 25vw;
+
+   
+
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 785px) {
 
     .photos{
         width: 70vw;
@@ -48,9 +48,7 @@
     .photo{
         width: 100%;  
     }
-    .uncentred{
-        
-    }
+    
     .photo>img{
         width: 70vw;
         border-radius: 20px;

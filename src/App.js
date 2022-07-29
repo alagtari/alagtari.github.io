@@ -19,7 +19,7 @@ function App() {
       </Route>
       <Route path="/portfolio" element={<PortfolioPage />}/>
       <Route path="/test" element={<Test />}/>
-      <Route path="/gallery" element={<GalleryPage />}/>
+      <Route path="/gallery/:id" element={<GalleryPage />}/>
 
     </Routes>
   </BrowserRouter>

@@ -30,7 +30,7 @@ function Portfolio() {
       <Row className='items' >
       
       <Col md={4} xs={10} align='center'>
-      <Link style={{textDecoration:'none'}} to='/gallery'>
+      <Link style={{textDecoration:'none'}} to='/gallery/1'>
           <motion.div
           initial={{
             opacity:0.5,
@@ -43,8 +43,8 @@ function Portfolio() {
             transition:{duration:0.6}
           }}
           className='project'>
-          <h4>Food mobile application</h4>
-          <p>A mobile application for food delivery</p>
+          <h4>Food application</h4>
+          <p>An application for food delivery</p>
           <div className='skills'>
         <div className='skill'>Flutter</div>
         <div className='skill'>UX/UI</div>
@@ -54,7 +54,8 @@ function Portfolio() {
 </Link>
       </Col>
       
-      <Col md={4} xs={10}>
+      <Col md={4} xs={10} align='center'>
+      <Link style={{textDecoration:'none'}} to='/gallery/2'>
           <motion.div
           initial={{
             opacity:0.5,
@@ -66,9 +67,18 @@ function Portfolio() {
             y:0,
             transition:{duration:0.7}
           }}
-          className='project'></motion.div>
+          className='project'>
+          <h4>Appointment application</h4>
+          <p>An application for appointments with doctors</p>
+          <div className='skills'>
+        <div className='skill'>Flutter</div>
+        <div className='skill'>UX/UI</div>
+
+        </div>
+        </motion.div>
+</Link>
       </Col>
-      
+
       <Col md={4} xs={10}>
           <motion.div
           initial={{
